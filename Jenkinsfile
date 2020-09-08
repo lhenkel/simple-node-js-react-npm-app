@@ -27,7 +27,7 @@ pipeline {
                         sshPublisherDesc(
                             configName: 'docker1', 
                             transfers: [
-                                    sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '/docker/jenkins/files/', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'build/*')
+                                    sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: 'build1', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'build/*')
                                 ], 
                                 usePromotionTimestamp: false, 
                                 useWorkspaceInPromotion: false, 
